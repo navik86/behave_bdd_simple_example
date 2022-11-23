@@ -1,6 +1,6 @@
 from behave import *
 
-import check_relation_people as crp
+import projects.check_relation_people as crp
 
 
 @given("collect couples of people in container")
