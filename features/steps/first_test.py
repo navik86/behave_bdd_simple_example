@@ -1,6 +1,7 @@
 from behave import *
 
 import projects.check_relation_people as crp
+import projects.create_net_people as cnp
 
 
 @given("collect couples of people in container")
@@ -16,7 +17,7 @@ def step(context):
 
 @when("create net of people")
 def step(context):
-    context.net = crp.create_net(context.container)
+    context.net = cnp.create_net(context.container)
 
 
 @then('check relation "{first_people}" and "{second_people}"')
